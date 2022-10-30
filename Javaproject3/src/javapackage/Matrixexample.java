@@ -31,7 +31,7 @@ public class Matrixexample {
 		
 		//Multiplication of all members in transpose matrix
 		
-		int mul=1;  //ctreate variable of mul to store multiplication of member in transpose matrix
+		int mul=1;  //create variable of mul to store multiplication of member in transpose matrix
 		
 		for(int i=0;i<2;i++)
 		{
