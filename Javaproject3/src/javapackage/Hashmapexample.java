@@ -6,7 +6,9 @@ public class Hashmapexample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		HashMap<Integer,Integer> hm=new HashMap<>();
+		HashMap<Integer,Integer> hm=new HashMap<>(); //create HashMap of Integer type
+		
+		//put keys and values on Hashmap and key are 1 to 15 and values are square of key
 		hm.put(1, 1);
 		hm.put(2, 4);
 		hm.put(3, 9);
@@ -22,6 +24,8 @@ public class Hashmapexample {
 		hm.put(13, 169);
 		hm.put(14, 196);
 		hm.put(15, 225);
+		
+		//Print Hashmap keys and values using for loop
 		for(Integer key:hm.keySet())
 		{
 			System.out.println("Key:"+key+"values:"+hm.get(key));

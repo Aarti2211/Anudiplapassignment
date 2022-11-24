@@ -48,7 +48,7 @@ class Agent implements Comparable<Agent> //using Comparable interface we can sor
 		this.area = area;
 	}
 	@Override
-	public int compareTo(Agent o)         //This is method of Comparable interface,it provide a single sorting sequence only
+	public int compareTo(Agent o)    //This is method of Comparable interface,it provide a single sorting sequence only
 	{
 		// TODO Auto-generated method stub
 		return this.area.compareTo(o.area);  //this method sort area of Agent class
