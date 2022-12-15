@@ -7,7 +7,7 @@ public class Aircraftpassenger {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner sc=new Scanner(System.in);
+		/*Scanner sc=new Scanner(System.in);
 		System.out.println("Enter number of row");
 		
 		int r=sc.nextInt();  //give number of row from user
@@ -47,8 +47,23 @@ public class Aircraftpassenger {
 			//if flage is true then print sum
 			if(flage==true)
 				System.out.println("sum:"+sum);
-		}
+		
+		
+		}*/
+		
+		String str1 , str2 , str3;
 
+		str3 = new String("jim");
+
+		str1 = new String("jack");
+
+		str2 = str1 ;
+
+		str1 = new String("jill");
+
+		str3 = str2;
+
+		System.out.println(str3);
 	}
 
 }
