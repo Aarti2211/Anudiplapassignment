@@ -1,7 +1,12 @@
 package text.Hibernateassingment;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 
@@ -57,10 +62,13 @@ public class Employeeinfo {
 	@Id    //this  annotation marks the identifier for this entity.
 	
 	//private variable of Employeeinfo class
+	 @GeneratedValue(strategy=GenerationType.AUTO)  
+    @PrimaryKeyJoinColumn  
 	private int eid;
 	private String ename;
 	private String edept;
 	private int esalary;
+	@OneToOne(targetEntity=Address.class,cascade=CascadeType.ALL)  
 	private Address address;
 
 }

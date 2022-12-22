@@ -1,5 +1,7 @@
 package text.Hibernateassingment;
 
+import text.Hibernateassingment.*;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -45,6 +47,8 @@ public class App
 
 		  MetadataSources metadataSources = new MetadataSources(serviceRegistry);
 		   metadataSources.addAnnotatedClass(Employeeinfo.class);
+		   metadataSources.addAnnotatedClass(Address.class);
+		   
 		  Metadata metadata = metadataSources.buildMetadata();
 
 		  // here we build the SessionFactory (Hibernate 5.4)

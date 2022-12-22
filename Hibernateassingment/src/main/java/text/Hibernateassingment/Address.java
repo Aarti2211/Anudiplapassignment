@@ -1,11 +1,18 @@
 package text.Hibernateassingment;
 
 import javax.persistence.Embeddable;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Embeddable   //Entity uses a compound key
 public class Address {
 	
 	
+
+	
+
 	public Address() {
 		
 		// TODO Auto-generated constructor stub
@@ -37,9 +44,12 @@ public class Address {
 		this.epincode = epincode;
 	}
 	//this is private variable of Address class
+	@Id
+	 
 	private String ehname;
 	private String earea;
 	private String ecity;
 	private  int epincode;
+	
 
 }
